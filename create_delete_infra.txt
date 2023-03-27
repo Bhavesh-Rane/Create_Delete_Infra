@@ -1,0 +1,20 @@
+Implement a az cli powershell scripts to launch and destroy following infra component on azure
+RG, Vnet, Subnet, NSG with inbound rule to whitelist sourceIP and VM
+The launch & destroy action should be handled through commandline arguments
+
+To run the script
+
+.\infra.ps1 -action launch
+.\infra.ps1 -action destroy
+
+
+
+Once the script is done push it to a remote github repo (create a personal github repo for practice) 
+Implement a dockerfile with windows nanoserver as base image. The container should have following packages installed on it
+
+Git Repo : https://github.com/Bhavesh-Rane/Create_Delete_Infra
+1) git
+2) azure powershell modules
+
+build the image and run container
+The container run should clone the git repo, run the script to launch and destroy the infra. Use run args to take create/delete actions						
